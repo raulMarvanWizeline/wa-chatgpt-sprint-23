@@ -8,8 +8,54 @@
     font-family: Montserrat, Nunito;
   }
 
-  .App {
-    width: 100vw;
-    height: 100vh;
+  .bg-dark {
+    background-color: #0d1117;
+    color: #c9d1d9;
   }
+
+  .btn {
+    @apply bg-gray-700 text-white font-semibold py-2 px-4 border border-gray-700 rounded;
+  }
+
+  .btn:hover {
+    @apply bg-gray-600;
+  }
+
+  .btn-primary {
+    @apply bg-blue-500 text-white font-semibold py-2 px-4 border border-blue-500 rounded;
+  }
+
+  .btn-primary:hover {
+    @apply bg-blue-400;
+  }
+
+  label {
+    color: #c9d1d9;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="password"],
+  select {
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    color: #c9d1d9;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  select:focus {
+    border-color: #58a6ff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(17,88,199,0.3);
+  }
+  
 }

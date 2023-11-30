@@ -13,7 +13,7 @@ const EditorSettings: React.FC<EditorSettingsProps> = ({ fontSize, setFontSize, 
   return (
     <div className="flex flex-col gap-4 p-4">
       <div>
-        <label htmlFor="fontSize" className="block text-sm font-medium text-gray-700">Font size</label>
+        <label htmlFor="fontSize" className="block">Font size</label>
         <input
           id="fontSize"
           type="number"
@@ -25,7 +25,7 @@ const EditorSettings: React.FC<EditorSettingsProps> = ({ fontSize, setFontSize, 
         />
       </div>
       <div>
-        <label htmlFor="mode" className="block text-sm font-medium text-gray-700">Language</label>
+        <label htmlFor="mode" className="block">Language</label>
         <select
           id="mode"
           value={mode}
@@ -38,7 +38,7 @@ const EditorSettings: React.FC<EditorSettingsProps> = ({ fontSize, setFontSize, 
         </select>
       </div>
       <div>
-        <label htmlFor="theme" className="block text-sm font-medium text-gray-700">Theme</label>
+        <label htmlFor="theme" className="block">Theme</label>
         <select
           id="theme"
           value={theme}
