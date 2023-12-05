@@ -3,6 +3,7 @@ import AceEditor from "react-ace";
 
 import "ace-builds/src-noconflict/mode-javascript";
 import "ace-builds/src-noconflict/theme-dracula";
+import MonkeyLogo from "../icons/MonkeyLogo";
 
 interface GitCommentProps {
   username: string;
@@ -15,7 +16,7 @@ interface GitCommentProps {
 const GitComment: React.FC<GitCommentProps> = ({ username, userImage, comment, createdAt, codeSuggestion }) => {
   return (
     <div className="flex space-x-4 p-4 border-b border-gray-200">
-      <img src={userImage} alt={`${username}'s profile`} className="w-10 h-10 rounded-full" />
+      <MonkeyLogo />
       <div>
         <div className="flex items-center space-x-2">
           <h5 className="font-bold">{username}</h5>

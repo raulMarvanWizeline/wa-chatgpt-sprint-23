@@ -20,7 +20,7 @@ interface CodeEditorProps {
 
 const CodeEditor: React.FC<CodeEditorProps> = ({ value, onChange, fontSize, mode, theme }) => {
   return (
-    <div className="p-2 border border-gray-300 rounded-lg shadow-sm w-fit">
+    <div className="ml-4 p-2 border border-gray-300 rounded-lg shadow-sm w-fit">
       <AceEditor
           className="!w-[800px]"
           mode={mode}
