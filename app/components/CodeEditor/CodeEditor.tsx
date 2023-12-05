@@ -16,13 +16,15 @@ interface CodeEditorProps {
   fontSize: number;
   mode: string; // 'javascript', 'python', etc.
   theme: string; // 'github', 'monokai', etc.
+  disabled?: boolean;
 }
 
-const CodeEditor: React.FC<CodeEditorProps> = ({ value, onChange, fontSize, mode, theme }) => {
+const CodeEditor: React.FC<CodeEditorProps> = ({ value, onChange, fontSize, mode, theme, disabled }) => {
   return (
     <div className="ml-4 p-2 border border-gray-300 rounded-lg shadow-sm w-fit">
       <AceEditor
           className="!w-[800px]"
+          readOnly={disabled}
           mode={mode}
           theme={theme}
           name="UNIQUE_ID_OF_DIV"

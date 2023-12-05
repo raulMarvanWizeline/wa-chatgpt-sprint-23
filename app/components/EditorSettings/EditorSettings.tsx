@@ -7,9 +7,10 @@ interface EditorSettingsProps {
   setMode: (mode: string) => void;
   theme: string;
   setTheme: (mode: string) => void;
+  disabled?: boolean;
 }
 
-const EditorSettings: React.FC<EditorSettingsProps> = ({ fontSize, setFontSize, mode, setMode, theme, setTheme }) => {
+const EditorSettings: React.FC<EditorSettingsProps> = ({ fontSize, setFontSize, mode, setMode, theme, setTheme, disabled }) => {
   return (
     <div className="flex flex-col gap-4 p-4">
       <div>
@@ -21,6 +22,7 @@ const EditorSettings: React.FC<EditorSettingsProps> = ({ fontSize, setFontSize, 
           min={8}
           max={24}
           onChange={(e) => setFontSize(Number(e.target.value))}
+          disabled={disabled}
           className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
         />
       </div>
@@ -30,6 +32,7 @@ const EditorSettings: React.FC<EditorSettingsProps> = ({ fontSize, setFontSize, 
           id="mode"
           value={mode}
           onChange={(e) => setMode(e.target.value)}
+          disabled={disabled}
           className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
         >
           <option value="javascript">JavaScript</option>
@@ -43,6 +46,7 @@ const EditorSettings: React.FC<EditorSettingsProps> = ({ fontSize, setFontSize, 
           id="theme"
           value={theme}
           onChange={(e) => setTheme(e.target.value)}
+          disabled={disabled}
           className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
         >
           <option value="github">Github</option>
