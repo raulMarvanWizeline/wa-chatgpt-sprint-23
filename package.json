@@ -1,8 +1,8 @@
 {
-  "name": "wa-chatgpt-sprint-23-frontend",
+  "name": "wa-chatgpt-sprint-23",
   "private": true,
   "sideEffects": false,
-  "homepage": "https://raulMarvanWizeline.github.io/wa-chatgpt-sprint-23-frontend",
+  "homepage": "https://raulMarvanWizeline.github.io/wa-chatgpt-sprint-23",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
