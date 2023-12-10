@@ -39,7 +39,7 @@ This project uses several dependencies listed below:
 1. Clone the repository.
 2. Run `npm install` to install the dependencies.
 3. Create a `.env` file and add your OpenAI API key as `OPENAI_API_KEY`.
-4. Run `npm start` to start the application.
+4. Run `npm run dev` to start the application.
 
 ## Usage
 

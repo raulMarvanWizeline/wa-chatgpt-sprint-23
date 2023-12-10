@@ -3,8 +3,8 @@ import CodeReviewPanel from "~/components/CodeReviewPanel/CodeReviewPanel";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Code Reviewer App" },
+    { name: "description", content: "Welcome to Code Reviewer App!" },
   ];
 };
 
