@@ -2,7 +2,10 @@
   "name": "wa-chatgpt-sprint-23-frontend",
   "private": true,
   "sideEffects": false,
+  "homepage": "https://raulMarvanWizeline.github.io/wa-chatgpt-sprint-23-frontend",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "remix build",
     "dev": "remix dev --manual",
     "start": "remix-serve ./build/index.js",
@@ -30,6 +33,7 @@
     "@types/react-dom": "^18.2.7",
     "@types/tailwindcss": "^3.1.0",
     "eslint": "^8.38.0",
+    "gh-pages": "^6.1.0",
     "typescript": "^5.1.6"
   },
   "engines": {
