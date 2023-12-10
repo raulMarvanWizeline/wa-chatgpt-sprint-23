@@ -4,6 +4,8 @@
 
 The Code Reviewer App is a React-based application that offers an automated code reviewing experience using OpenAI's API. This simple interface allows users to choose the font size, programming language, and Ace editor theme. Users can input their code into the editor, submit it for review, and receive AI-generated code review comments displayed on the right side of the interface.
 
+https://github.com/raulMarvanWizeline/wa-chatgpt-sprint-23-frontend/assets/95236681/b43c4d2c-defd-4b20-a802-cc35e11d776f
+
 ## Features
 
 - **Customizable Ace Editor**: Select your preferred font size, programming language, and editor theme.
@@ -44,7 +46,7 @@ This project uses several dependencies listed below:
 - Start the application.
 - Customize the editor settings as needed.
 - Write or paste your code in the editor.
-- Click the 'Submit for Review' button to send your code to the OpenAI API.
+- Click the 'Code review' button to send your code to the OpenAI API.
 - View the AI-generated review comments on the right side of the screen.
 
 ## Contributing
